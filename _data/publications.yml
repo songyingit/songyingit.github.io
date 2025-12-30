@@ -5,8 +5,8 @@ main:
     conference_short: MD
     conference: Nature Chemical Biology 21(3), 412-419, 2025
     pdf: https://www.nature.com/articles/s41589-024-01727-w
-    image: ./assets/img/PFAS_JACS_cover.jpg
-    notes: Cover • Reported by 7+ news
+    image: ./assets/img/NCB_MD_TOC.png
+    notes: Highlight
 
   - title: Leveraging Machine Learning Models for Peptide-Protein Interaction Prediction
     authors: <strong>Song Yin*</strong>, Xuenan Mi*, and Diwakar Shukla<sup><i class="fa-regular fa-envelope fa-xs"></i></sup> 
@@ -30,7 +30,7 @@ main:
     conference_short: DFT
     conference: Physical Chemistry Chemical Physics 22 (30), 17106-17116, 2020
     pdf: https://pubs.rsc.org/en/content/articlepdf/2020/cp/d0cp02285c
-    image:  ./assets/img/pccp_toc.jpg
+    image:  ./assets/img/PCCP_TOC.jpeg
     notes: 2020 PCCP HOT Article
 
   - title: "In-situ ion-activated carbon nanospheres with tunable ultramicroporosity for superior CO<sub>2</sub> capture"

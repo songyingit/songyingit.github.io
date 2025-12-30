@@ -122,9 +122,24 @@
       }
    }
 
-   @media print, screen and (max-width: 960px) { 
+   @media print, screen and (max-width: 960px) {
+    .topnav {
+        min-height: 50px;
+      }
+
+    .topnav img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
     .topnav #myLinks {
         display: none;
+        flex-direction: column-reverse;
+      }
+
+    .topnav #myLinks[style*="display: block"] {
+        display: flex !important;
+        flex-direction: column-reverse;
       }
 
       .topnav a.normal {

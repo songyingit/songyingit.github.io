@@ -52,8 +52,22 @@
         x.style.display = "block";
       }
       }
+
+      // Close menu when clicking on a navigation link (mobile only)
+      document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('#myLinks a');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            // Only close menu on mobile (screen width <= 960px)
+            if (window.innerWidth <= 960) {
+              var menu = document.getElementById("myLinks");
+              menu.style.display = "none";
+            }
+          });
+        });
+      });
    </script>
-   
+
 
   </head>
   <body>

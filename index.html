@@ -52,8 +52,22 @@
         x.style.display = "block";
       }
       }
+
+      // Close menu when clicking on a navigation link (mobile only)
+      document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('#myLinks a');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            // Only close menu on mobile (screen width <= 960px)
+            if (window.innerWidth <= 960) {
+              var menu = document.getElementById("myLinks");
+              menu.style.display = "none";
+            }
+          });
+        });
+      });
    </script>
-   
+
 
   </head>
   <body>
@@ -66,33 +80,33 @@
       
   
     <a class="normal right" href="./#contact">Contact</a>
-    
 
-  
+
+
     <a class="normal" href="./#awards">Awards</a>
-  
 
-  
+
+
     <a class="normal" href="./#teaching">Teaching</a>
-  
 
-  
+
+
     <a class="normal" href="./#courses">Courses</a>
-  
 
-  
+
+
     <a class="normal" href="./#publications">Publications</a>
-  
 
-  
+
+
     <a class="normal" href="./#education">Education</a>
-  
 
-  
+
+
     <a class="normal" href="./#news">News</a>
-  
 
-  
+
+
     <a class="normal" href="./#about-me">About</a>
   
 
@@ -257,7 +271,38 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/RSCchembio_review.gif" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/NCB_MD_TOC.png" class="teaser img-fluid z-depth-1" />
+            <abbr class="badge">MD</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://www.nature.com/articles/s41589-024-01727-w">Substrate interactions guide cyclase engineering and lasso peptide diversification</a></div>
+      <div class="author">Susanna E Barrett, <strong>Song Yin</strong>, Peter Jordan, John K Brunson, Jessica Gordon-Nunez, Gabriella Costa Machado da Cruz, Christopher Rosario, Bethany K Okada, Kelsey Anderson, Thomas A Pires, Ruoyang Wang, Diwakar Shukla, Mark J Burk<sup><i class="fa-regular fa-envelope fa-xs"></i></sup>, Douglas A Mitchell<sup><i class="fa-regular fa-envelope fa-xs"></i></sup></div>
+      <div class="periodical"><em>Nature Chemical Biology 21(3), 412-419, 2025</em>
+      </div>
+    <div class="links">
+
+      <a href="https://www.nature.com/articles/s41589-024-01727-w" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+
+
+
+
+
+      <strong> <i style="color:#e74d3c">Highlight</i></strong>
+
+
+    </div>
+  </div>
+</div>
+</li>
+
+<br>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="./assets/img/RSCchembio_review.gif" class="teaser img-fluid z-depth-1" />
             <abbr class="badge">Review</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -288,7 +333,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/PFAS_JACS_cover.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/PFAS_JACS_cover.jpg" class="teaser img-fluid z-depth-1" />
             <abbr class="badge">MD</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -319,7 +364,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/PCCP_TOC.jpeg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/PCCP_TOC.jpeg" class="teaser img-fluid z-depth-1" />
             <abbr class="badge">DFT</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -350,7 +395,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="./assets/img/carbon_co2.jpg" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    <img src="./assets/img/carbon_co2.jpg" class="teaser img-fluid z-depth-1" />
             <abbr class="badge">GCMC</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
