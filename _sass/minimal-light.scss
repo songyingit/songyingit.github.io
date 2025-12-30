@@ -143,3 +143,50 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
 
 /*# sourceMappingURL=style.css.map */
+
+// Add this to your _sass/minimal-light.scss file
+
+// Illinois bar styles
+.illinois-bar {
+  width: 100%;
+  overflow-x: auto; // Allow horizontal scrolling on small screens
+  -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
+}
+
+// Make the navigation responsive
+@media print, screen and (max-width: 768px) {
+  .illinois-bar {
+    padding: 10px 0;
+    
+    img {
+      max-width: 100px; // Limit Illinois logo size on mobile
+      height: auto;
+    }
+    
+    a {
+      font-size: 14px; // Reduce font size on mobile
+      padding: 5px 8px; // Reduce padding
+      margin: 2px; // Add some spacing
+    }
+  }
+  
+  // If your nav links are in a list
+  nav ul, nav ol {
+    flex-wrap: wrap; // Allow links to wrap to next line
+    justify-content: center; // Center the navigation items
+  }
+}
+
+// For very small screens (phones)
+@media print, screen and (max-width: 480px) {
+  .illinois-bar {
+    a {
+      font-size: 12px; // Even smaller font
+      padding: 4px 6px;
+    }
+    
+    img {
+      max-width: 80px; // Smaller logo
+    }
+  }
+}
