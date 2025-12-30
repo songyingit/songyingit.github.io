@@ -144,49 +144,41 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 
 /*# sourceMappingURL=style.css.map */
 
-// Add this to your _sass/minimal-light.scss file
-
-// Illinois bar styles
-.illinois-bar {
-  width: 100%;
-  overflow-x: auto; // Allow horizontal scrolling on small screens
-  -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
-}
-
-// Make the navigation responsive
-@media print, screen and (max-width: 768px) {
-  .illinois-bar {
-    padding: 10px 0;
-    
-    img {
-      max-width: 100px; // Limit Illinois logo size on mobile
-      height: auto;
-    }
-    
-    a {
-      font-size: 14px; // Reduce font size on mobile
-      padding: 5px 8px; // Reduce padding
-      margin: 2px; // Add some spacing
-    }
+/* Fix for Illinois bar being cut off on mobile when menu is closed */
+@media print, screen and (max-width: 960px) {
+  header {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding-bottom: 10px;
   }
   
-  // If your nav links are in a list
-  nav ul, nav ol {
-    flex-wrap: wrap; // Allow links to wrap to next line
-    justify-content: center; // Center the navigation items
+  /* Ensure the Illinois logo/bar is fully visible */
+  header a img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+  }
+  
+  /* Make sure navigation wrapper has enough space */
+  header nav {
+    margin-top: 10px;
+    overflow: visible !important;
+  }
+  
+  /* Ensure the wrapper doesn't clip content */
+  .wrapper {
+    overflow: visible !important;
   }
 }
 
-// For very small screens (phones)
+/* For very small phones */
 @media print, screen and (max-width: 480px) {
-  .illinois-bar {
-    a {
-      font-size: 12px; // Even smaller font
-      padding: 4px 6px;
-    }
-    
-    img {
-      max-width: 80px; // Smaller logo
-    }
+  header {
+    padding: 10px 0 15px 0;
+  }
+  
+  header a img {
+    max-height: 40px;
   }
 }
