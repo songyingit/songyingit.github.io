@@ -1,5 +1,13 @@
 main:
 
+  - title: "Substrate interactions guide cyclase engineering and lasso peptide diversification"
+    authors: Susanna E Barrett, <strong>Song Yin</strong>, Peter Jordan, John K Brunson, Jessica Gordon-Nunez, Gabriella Costa Machado da Cruz, Christopher Rosario, Bethany K Okada, Kelsey Anderson, Thomas A Pires, Ruoyang Wang, Diwakar Shukla, Mark J Burk<sup><i class="fa-regular fa-envelope fa-xs"></i></sup>, Douglas A Mitchell<sup><i class="fa-regular fa-envelope fa-xs"></i></sup> 
+    conference_short: MD
+    conference: Nature Chemical Biology 21(3), 412-419, 2025
+    pdf: https://www.nature.com/articles/s41589-024-01727-w
+    image: ./assets/img/PFAS_JACS_cover.jpg
+    notes: Cover • Reported by 7+ news
+
   - title: Leveraging Machine Learning Models for Peptide-Protein Interaction Prediction
     authors: <strong>Song Yin*</strong>, Xuenan Mi*, and Diwakar Shukla<sup><i class="fa-regular fa-envelope fa-xs"></i></sup> 
     #<br>( <sup><i class="fa-regular fa-envelope fa-xs"></i></sup> Corresponding author)
